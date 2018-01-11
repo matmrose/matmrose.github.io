@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title> {{ page.title }} </title>
+		<title> {{ site.title }} </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -21,22 +21,27 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="./images/avandeusen.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#"> {{ page.title }} </a></h1>
+					<span class="image avatar"><a href="/"><img src="./images/avandeusen.jpg" alt="" /></a></span>
+					<h1 id="logo"><a href="/"> {{ site.title }} </a></h1>
 					<p>PhD Student<br />
-					Industrial and Operations Engineering</p>
+					Industrial & Operations Engineering<br/>
+					University of Michigan</p>
 				</header>
 				<nav id="nav">
+
 					<ul>
+						{% if page.title == 'main' %}
 						<li><a href="#one" class="active">About</a></li>
 						<li><a href="#two">Things I Can Do</a></li>
 						<li><a href="#three">A Few Accomplishments</a></li>
 						<!-- <li><a href="#four">Contact</a></li> -->
+						{% endif %}
 					</ul>
+
 				</nav>
 				<footer>
 					<ul class="icons">
-						<li><a href="#" class="icon">CV</a></li>
+						<li><a href="/cv.html" class="icon">CV</a></li>
 						<li><a href="#" class="icon">|</a></li>
 						<li><a href="https://cheps.engin.umich.edu/" class="icon">CHEPS</a></li>
 					</ul>
