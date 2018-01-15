@@ -2563,7 +2563,8 @@
 						border: 0;
 						color: #ffffff !important;
 						display: block;
-						padding: 1.5em 0;
+						padding: 1em 0;
+						/*change the padding line above to make the text blocks around section titles taller*/
 						text-decoration: none;
 					}
 
