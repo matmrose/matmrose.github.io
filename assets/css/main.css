@@ -2601,7 +2601,7 @@
 /* One */
 
 	#one:before {
-		background-image: url("../../images/ekg.jpg");
+		background-image: url('/images/ekg.jpg');
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
